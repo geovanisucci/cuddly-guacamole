@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\guacamole.Domain\guacamole.Domain.csproj" />
+    <ProjectReference Include="..\guacamole.Application\guacamole.Application.csproj" />
+    <ProjectReference Include="..\guacamole.Cross.IoC\guacamole.Cross.IoC.csproj" />
+  </ItemGroup>
+
+</Project>

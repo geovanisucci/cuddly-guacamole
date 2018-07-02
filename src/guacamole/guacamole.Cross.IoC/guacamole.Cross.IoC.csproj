@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\guacamole.Domain\guacamole.Domain.csproj" />
+    <ProjectReference Include="..\guacamole.Application\guacamole.Application.csproj" />
+    <ProjectReference Include="..\guacamole.Infra.Data\guacamole.Infra.Data.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
