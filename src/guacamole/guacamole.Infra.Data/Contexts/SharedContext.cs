@@ -27,7 +27,7 @@ namespace guacamole.Infra.Data.Contexts
 
         internal string GetConnectionString(string settingName)
         {
-            var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsetings.json");
+            var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json");
             var config = builder.Build();
             return config[settingName];
         }

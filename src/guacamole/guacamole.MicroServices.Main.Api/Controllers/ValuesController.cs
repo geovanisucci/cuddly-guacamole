@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using guacamole.Application.Interfaces.Main;
 using Microsoft.AspNetCore.Mvc;
 
 namespace guacamole.MicroServices.Main.Api.Controllers
@@ -10,6 +11,9 @@ namespace guacamole.MicroServices.Main.Api.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+
+       
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
