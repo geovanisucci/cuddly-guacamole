@@ -14,9 +14,8 @@ namespace guacamole.Cross.IoC.InjectionDependency.Config
         
         public static void ConfigureDependencies(IServiceCollection services)
         {
-            
+            //MainService
             services.AddScoped<MainContext>();
-
             services.AddScoped<IUserApplication, UserApplication>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, UserRepository>();
