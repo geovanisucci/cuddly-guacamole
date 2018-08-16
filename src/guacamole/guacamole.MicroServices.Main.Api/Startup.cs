@@ -27,7 +27,7 @@ namespace guacamole.MicroServices.Main.Api
         public void ConfigureServices(IServiceCollection services)
         {
             IoC.ConfigureDependencies(services);
-            
+            Cross.Migration.Migration.Run();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

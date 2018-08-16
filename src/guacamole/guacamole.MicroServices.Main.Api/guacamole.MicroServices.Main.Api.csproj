@@ -16,6 +16,7 @@
     <ProjectReference Include="..\guacamole.Domain\guacamole.Domain.csproj" />
     <ProjectReference Include="..\guacamole.Application\guacamole.Application.csproj" />
     <ProjectReference Include="..\guacamole.Cross.IoC\guacamole.Cross.IoC.csproj" />
+    <ProjectReference Include="..\guacamole.Cross.Migration\guacamole.Cross.Migration.csproj" />
   </ItemGroup>
 
 </Project>

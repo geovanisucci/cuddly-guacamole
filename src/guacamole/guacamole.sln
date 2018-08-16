@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "guacamole.Cross.IoC", "guac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "guacamole.MicroServices.Main.Api", "guacamole.MicroServices.Main.Api\guacamole.MicroServices.Main.Api.csproj", "{F615AA28-2FAF-43C9-B503-E2928071BDAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "guacamole.Cross.Migration", "guacamole.Cross.Migration\guacamole.Cross.Migration.csproj", "{FE21A0F6-0D33-4293-BF51-066F62FA496E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,5 +88,17 @@ Global
 		{F615AA28-2FAF-43C9-B503-E2928071BDAE}.Release|x64.Build.0 = Release|Any CPU
 		{F615AA28-2FAF-43C9-B503-E2928071BDAE}.Release|x86.ActiveCfg = Release|Any CPU
 		{F615AA28-2FAF-43C9-B503-E2928071BDAE}.Release|x86.Build.0 = Release|Any CPU
+		{FE21A0F6-0D33-4293-BF51-066F62FA496E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE21A0F6-0D33-4293-BF51-066F62FA496E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE21A0F6-0D33-4293-BF51-066F62FA496E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FE21A0F6-0D33-4293-BF51-066F62FA496E}.Debug|x64.Build.0 = Debug|Any CPU
+		{FE21A0F6-0D33-4293-BF51-066F62FA496E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FE21A0F6-0D33-4293-BF51-066F62FA496E}.Debug|x86.Build.0 = Debug|Any CPU
+		{FE21A0F6-0D33-4293-BF51-066F62FA496E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE21A0F6-0D33-4293-BF51-066F62FA496E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE21A0F6-0D33-4293-BF51-066F62FA496E}.Release|x64.ActiveCfg = Release|Any CPU
+		{FE21A0F6-0D33-4293-BF51-066F62FA496E}.Release|x64.Build.0 = Release|Any CPU
+		{FE21A0F6-0D33-4293-BF51-066F62FA496E}.Release|x86.ActiveCfg = Release|Any CPU
+		{FE21A0F6-0D33-4293-BF51-066F62FA496E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

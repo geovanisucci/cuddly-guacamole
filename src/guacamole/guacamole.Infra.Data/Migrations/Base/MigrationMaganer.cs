@@ -2,6 +2,7 @@ using System;
 using System.Data;
 using System.IO;
 using guacamole.Domain.Iterfaces.IMigrations;
+using guacamole.Domain.Iterfaces.IMigrations.Base;
 using Microsoft.Extensions.Configuration;
 using MySql.Data.MySqlClient;
 
@@ -20,26 +21,26 @@ namespace guacamole.Infra.Data.Migrations.Base {
                 }
             }
         }
-        public void CreateDatabase () {
+        public virtual void CreateDatabase () {
             using (var cmd = _connection.CreateCommand ()) {
                 cmd.CommandText = $"create database if not exists `{DatabaseName}`";
                 cmd.ExecuteNonQuery ();
             }
         }
 
-        public void CreateHistory () {
+        public virtual void CreateHistory () {
             throw new System.NotImplementedException ();
         }
 
-        public string LoadScript (string path) {
+        public virtual string LoadScript (string path) {
             throw new System.NotImplementedException ();
         }
 
-        public void Migrate () {
+        public virtual void Migrate () {
             throw new System.NotImplementedException ();
         }
 
-        public void VerifyHistory (out bool canApply) {
+        public  virtual void VerifyHistory (out bool canApply) {
             throw new System.NotImplementedException ();
         }
 
@@ -49,7 +50,7 @@ namespace guacamole.Infra.Data.Migrations.Base {
             return config[settingName];
         }
 
-        public void Dispose () {
+        public virtual void Dispose () {
             GC.SuppressFinalize (this);
             if (_connection != null) {
                 if (_connection.State != ConnectionState.Closed) {
